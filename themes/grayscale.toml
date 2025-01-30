@@ -32,10 +32,19 @@
 "ui.bufferline.active" = { fg = "white", bg = "background" }
 
 # error messages
-"diagnostic.error" = {fg="white", underline={color="red", style="curl"}}
-"diagnostic.warning" = {fg="white", underline={color="orange", style="curl"}}
-"diagnostic.hint" = {fg="gray", modifiers=["bold"]}
+"error" = { fg = "red" }
+
+# warnings
+"diagnostic.warning" = {fg="yellow", underline={color="orange", style="curl"}}
+"warning" = { fg = "yellow" }
+
+# hints
+"diagnostic.hint" = {fg="lightblue", modifiers=["bold"]}
+"hint" = {fg = "lightblue"}
+
+# deprecated
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
 
 # diff gutter
 "diff.plus" = {fg = "green"}
@@ -53,3 +62,4 @@ selected = "#bbbbbb"
 red = "#6F2622"
 green = "#384F2D"
 orange = "#645338"
+lightblue = "#94e5ff"
